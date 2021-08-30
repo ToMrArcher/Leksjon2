@@ -5,10 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class romanTest {
     @Test
     void shouldConvert1ToI() {
-        assertEquals("I", toRoman(1));
+        assertEquals("I", romanConverter.toRoman(1));
     }
 
-    private String toRoman(int i) {
-        return "I";
-    }
 }
