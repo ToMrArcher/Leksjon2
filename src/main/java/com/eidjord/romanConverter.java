@@ -3,9 +3,10 @@ package com.eidjord;
 public class romanConverter {
 
     static String toRoman(int i) {
-        if(i == 2){
-            return "II";
+        String romanNumber = "";
+        for (int j = 0; j < i; j++) {
+            romanNumber += "I";
         }
-        return "I";
+        return romanNumber;
     }
 }
