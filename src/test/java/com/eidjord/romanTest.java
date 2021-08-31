@@ -81,4 +81,8 @@ public class romanTest {
     void shouldConvert90ToXC(){
         assertEquals("XC", romanConverter.toRoman(90));
     }
+    @Test
+    void shouldConvert100ToC(){
+        assertEquals("C", romanConverter.toRoman(100));
+    }
 }
