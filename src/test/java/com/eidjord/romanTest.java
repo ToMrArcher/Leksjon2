@@ -49,8 +49,13 @@ public class romanTest {
     }
 
     @Test
-    void shouldConvert11ToxI(){
-        assertEquals("X", romanConverter.toRoman(11));
+    void shouldConvert11ToXI(){
+        assertEquals("XI", romanConverter.toRoman(11));
+    }
+
+    @Test
+    void shouldConvert24ToXXIV(){
+        assertEquals("XXIV", romanConverter.toRoman(24));
     }
 
 }

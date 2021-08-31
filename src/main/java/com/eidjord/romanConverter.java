@@ -4,7 +4,7 @@ public class romanConverter {
 
     static String toRoman(int i) {
         String romanNumber = "";
-        if (i == 10){
+        if (i >= 10){
             romanNumber += "X";
             i -= 10;
         }
