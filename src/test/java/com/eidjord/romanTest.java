@@ -91,4 +91,8 @@ public class romanTest {
     void shouldConvert220ToCCXX(){
         assertEquals("CCXX", romanConverter.toRoman(220));
     }
+    @Test
+    void sholdConvert400ToCD(){
+        assertEquals("CD", romanConverter.toRoman(400));
+    }
 }
