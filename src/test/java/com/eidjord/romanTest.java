@@ -35,7 +35,7 @@ public class romanTest {
 
     @Test
     void shouldConvert8ToVII(){
-        assertEquals("VII", romanConverter.toRoman(8));
+        assertEquals("VIII", romanConverter.toRoman(8));
     }
 
 }
