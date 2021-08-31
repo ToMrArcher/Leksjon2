@@ -3,20 +3,35 @@ package com.eidjord;
 public class romanConverter {
 
     static String toRoman(int i) {
-        int remainder = i;
         String romanNumber = "";
-        if(remainder / 5 > 0){
-            remainder -= remainder / 5;
-            romanNumber+="V";
-        }
-        if(remainder > 3){
+        if(i == 4){
             romanNumber += "IV";
+            i -= 4;
         }
-        else{
-            for (int j = 0; j < remainder; j++) {
-                romanNumber += "I";
-            }
+        for (int j = 0; j < i; j++) {
+            romanNumber += "I";
         }
         return romanNumber;
+    }
+
+    public String perfectConvert(int i){
+        switch(i){
+            case 1000:
+                return "M";
+            case 500:
+                return "D";
+            case 100:
+                return "C";
+            case 50:
+                return "L";
+            case 10:
+                return "X";
+            case 5:
+                return "V";
+            case 1:
+                return "I";
+            default:
+                throw new IllegalArgumentException();
+        }
     }
 }
