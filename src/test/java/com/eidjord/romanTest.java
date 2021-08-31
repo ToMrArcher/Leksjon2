@@ -63,4 +63,9 @@ public class romanTest {
         assertEquals("XL", romanConverter.toRoman(40));
     }
 
+    @Test
+    void shouldConvert50ToL(){
+        assertEquals("L", romanConverter.toRoman(50));
+    }
+
 }
