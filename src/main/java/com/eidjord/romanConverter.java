@@ -4,6 +4,10 @@ public class romanConverter {
 
     static String toRoman(int i) {
         String romanNumber = "";
+        if(i == 9){
+            romanNumber += "IX";
+            i -= 9;
+        }
         if(i >= 5){
             romanNumber += "V";
             i -= 5;
