@@ -68,7 +68,17 @@ public class romanTest {
         assertEquals("LV", romanConverter.toRoman(55));
     }
     @Test
-    void shouldConvert60ToLv(){
+    void shouldConvert60ToLX(){
         assertEquals("LX", romanConverter.toRoman(60));
+    }
+
+    @Test
+    void shouldConvert69ToLXIX(){
+        assertEquals("LXIX", romanConverter.toRoman(69));
+    }
+
+    @Test
+    void shouldConvert90ToXC(){
+        assertEquals("XC", romanConverter.toRoman(90));
     }
 }
