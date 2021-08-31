@@ -23,4 +23,19 @@ public class romanTest {
         assertEquals("IV", romanConverter.toRoman(4));
     }
 
+    @Test
+    void shouldConvert5ToV(){
+        assertEquals("V", romanConverter.toRoman(5));
+    }
+
+    @Test
+    void shouldConvert6ToVI(){
+        assertEquals("VI", romanConverter.toRoman(6));
+    }
+
+    @Test
+    void shouldConvert8ToVII(){
+        assertEquals("VII", romanConverter.toRoman(8));
+    }
+
 }
