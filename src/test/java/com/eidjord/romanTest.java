@@ -43,6 +43,9 @@ public class romanTest {
         assertEquals("IX", romanConverter.toRoman(9));
     }
 
-
+    @Test
+    void shouldConvert10ToX(){
+        assertEquals("X", romanConverter.toRoman(10));
+    }
 
 }
