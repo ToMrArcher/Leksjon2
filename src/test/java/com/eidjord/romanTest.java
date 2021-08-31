@@ -19,7 +19,7 @@ public class romanTest {
     }
 
     @Test
-    void shouldConvert4ToIV(){
+    void shouldConvert4ToIV() {
         assertEquals("IV", romanConverter.toRoman(4));
     }
 
