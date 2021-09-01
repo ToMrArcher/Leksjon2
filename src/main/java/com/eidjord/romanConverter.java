@@ -4,6 +4,10 @@ public class romanConverter {
 
     static String toRoman(int i) {
         String romanNumber = "";
+        if (i >= 500){
+            romanNumber += "D";
+            i -= 500;
+        }
         if(i >= 400){
             romanNumber += "CD";
             i -= 400;

@@ -101,4 +101,8 @@ public class romanTest {
     void shouldConvert594ToDXCIV(){
         assertEquals("DXCIV", romanConverter.toRoman(594));
     }
+    @Test
+    void shouldConvert1100ToMC(){
+        assertEquals("MC", romanConverter.toRoman(1100));
+    }
 }
