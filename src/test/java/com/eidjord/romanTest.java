@@ -101,4 +101,15 @@ public class romanTest {
     void shouldConvert594ToDXCIV(){
         assertEquals("DXCIV", romanConverter.toRoman(594));
     }
+
+    @Test
+    void shouldConvert1236ToMCCXXXVI(){
+        assertEquals("MCCXXXVI", romanConverter.toRoman(1236));
+    }
+
+    @Test
+    void shouldConvert3678ToMMMDCLXXVIII(){
+        assertEquals("MMMDCLXXVIII", romanConverter.toRoman(3678));
+    }
+
 }
